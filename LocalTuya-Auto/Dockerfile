@@ -15,5 +15,5 @@ RUN \
 COPY run.sh /
 COPY index.js /
 RUN chmod a+x /run.sh
-
+EXPOSE 3000
 CMD [ "/run.sh" ]

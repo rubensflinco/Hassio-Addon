@@ -1,11 +1,22 @@
 {
-    "name": "Starter project for Node.js based Hass.io addons",
-    "version": "0.003",
+    "name": "LocalTuya - Auto",
+    "version": "1.0.0",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "slug": "nodejs_starter_hassio",
-    "description": "Starter project for Node.js based Hass.io addons",
+    "description": "",
     "startup": "application",
     "boot": "auto",
+    "url": "https://github.com/rubensflinco/LocalTuya-Auto-Hassio-Addon/discussions",
+    "webui": "http://[HOST]:[PORT:3000]",
+    "ingress": true,
+    "ingress_port": 3000,
+    "ingress_entry": "",
+    "ports": {
+        "3000/tcp": 3000
+    },
+    "ports_description": {
+        "3000/tcp": "Web interface"
+    },
     "map": [
       "share:rw"
     ],

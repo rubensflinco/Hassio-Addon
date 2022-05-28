@@ -1,8 +1,9 @@
 {
     "name": "LocalTuya Auto",
     "version": "1.0.0",
-    "slug": "localtuya_auto_hassio_addon",
+    "slug": "localtuya_auto",
     "description": "",
+    "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "startup": "application",
     "boot": "auto",
     "url": "https://github.com/rubensflinco/Hassio-Addon/discussions",

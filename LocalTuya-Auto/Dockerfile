@@ -12,8 +12,7 @@ RUN \
         npm
 
 # Copy data for add-on
-COPY run.sh /
-COPY index.js /
+COPY . .
 RUN chmod a+x /run.sh
 EXPOSE 3000
 CMD [ "/run.sh" ]

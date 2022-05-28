@@ -7,8 +7,7 @@ RUN apt-get update && apt-get install -y python build-essential
 RUN mkdir -p /node_modules
 WORKDIR "./"
 COPY . .
-RUN npm install
-# COPY ["./node_modules"]
+# RUN npm install
 CMD npm run build
 EXPOSE 3000
 CMD npm start

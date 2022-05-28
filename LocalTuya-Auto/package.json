@@ -1,16 +1,14 @@
 {
-  "name": "localtuya-auto",
-  "version": "0.0.0",
-  "private": true,
+  "name": "nodejs_starter_hassio",
+  "version": "0.0.1",
+  "description": "Starter project for Node.js based Hass.io addons",
+  "main": "index.js",
   "scripts": {
-    "start": "node ./bin/www"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "author": "kdw2060",
+  "license": "ISC",
   "dependencies": {
-    "cookie-parser": "~1.4.4",
-    "debug": "~2.6.9",
-    "ejs": "~2.6.1",
-    "express": "~4.16.1",
-    "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "express": "^4.15.4"
   }
 }

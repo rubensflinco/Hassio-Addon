@@ -1,18 +1,19 @@
-ARG BUILD_FROM
-FROM $BUILD_FROM
+FROM node:16
 
-ENV LANG C.UTF-8
+# Create app directory
+WORKDIR /usr/src/app
 
-ADD package.json /
+# Install app dependencies
+# A wildcard is used to ensure both package.json AND package-lock.json are copied
+# where available (npm@5+)
+COPY package*.json ./
 
+RUN npm install
+# If you are building your code for production
+# RUN npm ci --only=production
 
-RUN \ 
-    apk add --no-cache \
-        nodejs \
-        npm
-
-# Copy data for add-on
+# Bundle app source
 COPY . .
-RUN chmod a+x /run.sh
 
-CMD [ "/run.sh" ]
+EXPOSE 3000
+RUN npm start

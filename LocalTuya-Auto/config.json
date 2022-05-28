@@ -1,11 +1,9 @@
 {
-    "name": "LocalTuya Auto",
-    "version": "1.0.0",
+    "name": "Starter project for Node.js based Hass.io addons",
+    "version": "0.003",
     "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
     "slug": "nodejs_starter_hassio",
-    "description": "LocalTuya Auto",
-    "panel_icon": "mdi:earth",
-    "panel_title": "LocalTuya Auto",
+    "description": "Starter project for Node.js based Hass.io addons",
     "startup": "application",
     "boot": "auto",
     "map": [

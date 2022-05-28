@@ -8,4 +8,4 @@ echo Hello!
 node -v
 npm -v
 npm install
-node index.js
+npm start

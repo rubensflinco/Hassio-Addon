@@ -1,1 +1,1 @@
-# test
+# LocalTuya - Auto

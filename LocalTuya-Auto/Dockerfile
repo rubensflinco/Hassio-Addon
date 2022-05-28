@@ -1,13 +1,18 @@
-# ARG BUILD_FROM
-# FROM $BUILD_FROM
+ARG BUILD_FROM
+FROM $BUILD_FROM
 
-FROM node:14-slim
-ENV CK_API_ENV=prod
-RUN apt-get update && apt-get install -y python build-essential
-RUN mkdir -p /node_modules
-WORKDIR "./"
+ENV LANG C.UTF-8
+
+ADD package.json /
+
+
+RUN \ 
+    apk add --no-cache \
+        nodejs \
+        npm
+
+# Copy data for add-on
 COPY . .
-# RUN npm install
-CMD npm run build
-EXPOSE 3000
-CMD npm start
+RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]

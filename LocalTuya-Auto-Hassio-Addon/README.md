@@ -1,1 +1,0 @@
-# LocalTuya-Auto-Hassio-Addon
